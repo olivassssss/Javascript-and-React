@@ -1,0 +1,14 @@
+
+
+body {
+    background-color: aquamarine;
+}
+
+#container {
+    background-color: rgb(255, 255, 255); 
+    width: 30%; 
+    height: 20%; 
+    text-align: center;
+    color: black;
+    margin: auto;
+}
