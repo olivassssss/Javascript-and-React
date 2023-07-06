@@ -20,3 +20,4 @@ for (let i = 0; i < elementos.length; i++) {
 }
 
 container.appendChild(div);                                     // inserir no container já existente o conteudo da Div
+                                                                // atribuir div como filha do container (appendChild())
