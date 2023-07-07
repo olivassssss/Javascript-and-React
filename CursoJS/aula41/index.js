@@ -26,3 +26,9 @@ else if (num1 === num2) {
 
 div.appendChild(p);
 container.appendChild(div)
+
+
+// função optimizada
+
+const max2 = (x, y) => x > y ? x : y;
+console.log(max(10, 5));
