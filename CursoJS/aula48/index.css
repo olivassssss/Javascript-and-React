@@ -1,13 +1,80 @@
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
 body {
     background-color: rgb(18, 68, 77);
 }
 
-
 #container {
-    width: 30%;
+    width: 40%;
     margin: auto;
     background-color: white;
     border-radius: 20px;
     padding: 10px;
     margin-top: 100px;
+}
+
+#container h1 {
+    font-size: 2.5rem;
+    margin: auto;
+    text-align: center;
+}
+
+.data {
+    text-align: center;
+    margin: auto;
+    background-color: crimson;
+    width: 35%;
+    font-size: 1.3rem;
+}
+
+.data .timer {
+    margin-bottom: 0;
+}
+
+.data .date {
+    margin-top: -4px;
+}
+
+.inputs {
+    border: 2px solid red;
+}
+
+.inputs input {
+    width: 100%;
+}
+
+.inputs button {
+    padding:.7em 1em;
+    margin: auto;
+}
+
+input[type=radio] {
+    display: flex;
+}
+
+.urgente h2{
+    color: black;
+    background-color: red;
+    text-align: center;
+    width: 45%;
+    margin: auto;
+}
+
+.medio h2{
+    color: black;
+    background-color: rgb(250, 233, 0);
+    text-align: center;
+    width: 45%;
+    margin: auto;
+}
+
+.calmo h2{
+    color: black;
+    background-color: rgb(0, 250, 42);
+    text-align: center;
+    width: 45%;
+    margin: auto;
 }

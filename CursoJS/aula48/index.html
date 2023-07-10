@@ -8,15 +8,43 @@
 </head>
 <body>
     <section id="container">
-        <div id="row">
-            <h1>Lista de Tarefas</h1>
-            <p>
-                <input type="text" class="input-nova-tarefa">
-                <button class="btn-add-tarefa">Adicionar Tarefa</button>
-            </p>
-
-            <ul class="tarefas"></ul>
+        <h1>Lista de Tarefas</h1>
+        <div class="data">
+            <p class="timer"></p>
+            <p class="date"></p>
         </div>
+        <div class="inputs">
+            <input type="text" class="input-nova-tarefa">
+            <input type="radio" id="urgente" name="urgente" value="urgente" checked>
+            <label for="urgente">Urgente</label>
+            <input type="radio" id="medio" name="urgente" value="medio">
+            <label for="medio">Urgência Média</label>
+            <input type="radio" id="calmo" name="urgente" value="calmo">
+            <label for="calmo">Tem tempo</label>
+            <br>
+            <button class="btn-add-tarefa">Adicionar Tarefa</button>
+        </div>
+        <div class="urgente">
+            <h2>É URGENTE</h2>
+            <ul class="tarefas">
+            <!-- <li></li> -->
+            </ul>
+        </div>
+
+        <div class="medio">
+            <h2>NÃO É TÃO URGENTE</h2>
+            <ul class="tarefas">
+            <!-- <li></li> -->
+            </ul>
+        </div>
+
+        <div class="calmo">
+            <h2>SE TIVER TEMPO FAÇO</h2>
+            <ul class="tarefas">
+            <!-- <li></li> -->
+            </ul>
+        </div>
+        
     </section>
 
 
