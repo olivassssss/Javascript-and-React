@@ -16,3 +16,7 @@ body {
 .relogio {
     font-size: 3em;
 }
+
+.pausado {
+    color:red
+}
