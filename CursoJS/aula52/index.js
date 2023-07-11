@@ -1,4 +1,4 @@
-// escopos
+// scopes
 
 const nome = 'Diogo'
 
