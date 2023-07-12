@@ -46,14 +46,14 @@ function saveTasks() {
     localStorage.setItem('tasks', taskJSON);
 }
 
-function addSavedTasks() {
+(function addSavedTasks() {
     const tasks = localStorage.getItem('tasks');
     const taskList = JSON.parse(tasks);
 
     for (let task of taskList) {
         createTask(task);
     }
-} addSavedTasks();
+})();
 
 // EVENT LISTENERS
 
@@ -89,14 +89,14 @@ function getTime() {
     });
 }
 
-function timeShow() {
+(function timeShow() {
     const timer = document.querySelector('.timer');
     timer.innerHTML = getTime();
 
     const interval = setInterval(function () {
         console.log(timeShow());
     }, 1000)
-} timeShow();
+})();
 
 
 // DATE FUNCTIONS
@@ -107,15 +107,14 @@ function getDate() {
         dateStyle: 'full',
         timeStyle: 'short',
     };
-
     return data.toLocaleDateString("pt-PT");
 }
 
-function showDate() {
+(function showDate() {
     const date = document.querySelector('.date');
     date.innerHTML = `${getDate()}`;
     
-} showDate();
+})()
 
 
 
