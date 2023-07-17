@@ -14,3 +14,5 @@ const pessoa3 = new Pessoa('Rosa', 'Oliveira');
 console.dir(pessoa1)
 console.dir(pessoa2)
 console.dir(pessoa3.nomeCompleto())
+
+
