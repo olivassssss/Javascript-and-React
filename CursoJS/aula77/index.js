@@ -20,14 +20,36 @@
     705.484.450-52      - Tem de ser uma string
 */
 
-let cpf = '705.484.450-52';
 let cpfLimpo = cpf.replace(/\D+/g, '');
 console.log(cpfLimpo)
 
 // string para array
 
-let cpfArray = Array.from(cpfLimpo)
-console.log(cpfArray)
-
 cpfArray.reduce((ac,val) => ac + Number(val), 0);
 
+(function ValidaCpf(cpfEnviado) {
+    Object.defineProperty(this, 'cpfLimpo', {
+        enumerable: true,
+        get: function() {
+            return cpfEnviado.replace(/\D+/g, '')
+        }
+    })
+})
+
+ValidaCpf.prototype.valida() = function() {
+    if(typeof this.cpfLimpo === 'undefined') return false
+    if(this.cpfLimpo.length !== 11) return false
+
+    const cpfParcial = this.cpfLimpo.slice(0, -2)
+    const digito1 = this.criaDigito(cpfParcial)
+    // if(typeof cpfLimpo === ' number')    
+
+    return true;
+}
+
+ValidaCpf.prototype.criaDigito = function(cpfParcial) {
+    const cpfArray = Array.from(cpfParcial)
+}
+
+const cpf = new ValidaCpf('705.484.450-52');
+cpf.valida();
